@@ -1,3 +1,4 @@
+#Sentiment Analysis - Twitter Dataset.R
 #The goal of this project is to see if our machine learning model can accurately, to a large extent, predict if a sentiment will be positive or negative by just going through the tweets.
 #install.packages("magrittr") # package installations are only needed the first time you use it
 #install.packages("dplyr")
