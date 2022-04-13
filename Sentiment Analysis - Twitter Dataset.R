@@ -1,4 +1,5 @@
 #Sentiment Analysis - Twitter Dataset.R
+
 #The goal of this project is to see if our machine learning model can accurately, to a large extent, predict if a sentiment will be positive or negative by just going through the tweets.
 #install.packages("magrittr") # package installations are only needed the first time you use it
 #install.packages("dplyr")
@@ -211,6 +212,6 @@ library(caret)
 confusionMatrix(table(rf_pred,testing$Class))
 
 #Conclusion
-#Naive Bayes model performs the best with 98% accuracy and Random Forest model with 97% as compared to Support Vector Machine  67%. Naive Bayes works on the assumption that the features of the dataset are independent of each other hence called Naive.
+#On comparing the scores using confusion matrix for each of the 3 models, Naive Bayes model performs the best with 98% accuracy and Random Forest model with 97% as compared to Support Vector Machine  67%. Naive Bayes works on the assumption that the features of the dataset are independent of each other hence called Naive.
 #It works well for bag-of-words models a.k.a text documents since words in a text document are independent of each other; the location of one word doesn't depend on another word.Hence, it satisfys the independence assumption of the Naive Bayes model.
 #It is therefore the most commonly used model for text classification, sentiment analysis, spam filtering & recommendation systems.
